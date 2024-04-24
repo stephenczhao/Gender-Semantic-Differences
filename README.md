@@ -1,3 +1,28 @@
+# Code for Analysis used in Paper[Semantic Embedding and Distances: Assessing Gender Differences across Language Models]: 
+```
+./comprehensive_analysis.ipynb
+```
+
+to run the embedding extraction for text-embedding-3-large, you will need to set up system variable for OpenAI API key:
+```
+EXPORT OPENAI_API_KEY=your_api_key
+```
+
+
+# Environment Setup
+```
+conda create --name gender_difference python=3.12
+conda activate
+pip install -r requirements.txt
+```
+
+# Data
+You can access the data here: 
+```
+./gendered_words.json
+```
+
+
 # Gendered Words Dataset
 
 This dataset tags English words with the [natural gender](#natural-gender-definition) of the person or type of person the word refers to.
@@ -46,14 +71,3 @@ The dataset will be occasionally updated, and pull requests are welcome.
 # Natural Gender Definition
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Grammatical_gender#Grammatical_vs._natural_gender) (as of 2019-10-31), "The natural gender of a noun, pronoun or noun phrase is a gender to which it would be expected to belong based on relevant attributes of its referent. This usually means masculine or feminine, depending on the referent's sex (or gender in the sociological sense)." 
-
-
-# Code for Final Paper: 
-```
-comprehensive_comparison.ipynb
-```
-
-to run the embedding extraction for text-embedding-3-large, you will need to set up system variable for OpenAI API key:
-```
-EXPORT OPENAI_API_KEY=your_api_key
-```
